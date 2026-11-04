@@ -7,13 +7,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f9fd;
-    transform: translateY(-30px);
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     padding: 15px;
+    padding-bottom: 75px;
 }
 
 .container {
