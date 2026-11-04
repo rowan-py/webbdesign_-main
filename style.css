@@ -1,18 +1,126 @@
-.container { 
-    max-width: 400px;
-    margin: 20px auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f9fd;
+    padding: 2px 4px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 8px 12px 10px;
+    background-color: #f8fbff;
+    border: 1px solid #d7e8fa;
+    border-radius: 9px;
+}
+
+h1 {
+    color: #142e50;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.input-area {
+    display: flex;
+    gap: 7px;
+    width: 100%;
+    margin-bottom: 11px;
 }
 
 input {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-    padding: 8px;
-    background: #f1f1f1; 
-    border-radius: 4px;
+    flex: 1;
+    min-width: 0;
+    height: 33px;
+    padding: 0 16px;
+
+    border: 1px solid #c8ddf5;
+    border-radius: 7px;
+
+    background-color: #ffffff;
+    color: #142e50;
+
+    font-size: 13px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #83a9d8;
+}
+
+input:focus {
+    border-color: #80b4f4;
 }
 
 button {
-    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+#addButton {
+    width: 88px;
+    height: 33px;
+
+    background-color: #0866f9;
+    color: white;
+
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: background-color 0.2s;
+}
+
+#addButton:hover {
+    background-color: #0055dc;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.task {
+    min-height: 32px;
+    padding: 4px 10px 4px 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #eaf1f8;
+    border-radius: 7px;
+}
+
+.task span {
+    color: #193455;
+    font-size: 12px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.remove-button {
+    min-width: 70px;
+    height: 25px;
+    padding: 0 10px;
+
+    background-color: #ff2444;
+    color: #ffffff;
+
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+
+    transition: background-color 0.2s;
+}
+
+.remove-button:hover {
+    background-color: #df1230;
 }
